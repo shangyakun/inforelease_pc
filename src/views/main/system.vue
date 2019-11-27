@@ -69,7 +69,7 @@
 			  :total="totalCount">
 			</el-pagination>
 			<div class="footer">
-		        <p>Copyright © 2016 - 2019 YUNJI. All Rights Reserved. 云集 版权所有</p>
+		        <p>Copyright © 2016 - 2019 SYK. All Rights Reserved. SYK 版权所有</p>
 		    </div>
 		</div>
 	</div>

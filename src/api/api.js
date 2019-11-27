@@ -19,12 +19,9 @@ import qs from 'qs'
     });
     export default (url, method, data, headers) => {
         if(url.indexOf('/userInfo/')>=0){
-            // axios.defaults.baseURL = 'http://ty.yunjiglobal.com/ssoSystem/';
-            axios.defaults.baseURL = 'http://sso.yunjiglobal.com/';//正式接口
+            axios.defaults.baseURL = '';//正式接口
         }else{
-            // axios.defaults.baseURL = 'http://ty.yunjiglobal.com/info_pc/';
-           // axios.defaults.baseURL = 'http://portal.yunjiglobal.com/informationsystem/';//正式接口
-           axios.defaults.baseURL = '/informationsystem';//正式接口
+           axios.defaults.baseURL = '';//正式接口
         };
         return axios(Object.assign({
             url: url,

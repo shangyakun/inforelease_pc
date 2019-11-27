@@ -5,8 +5,8 @@
 	        <img src="../../assets/img/logo_header.png" alt>
 	    </div>
 	    <div class="centerNav">
-	        <a href="http://portal.yunjiglobal.com/it_portal/index.html#/index/commonuse" v-if='$route.path!="/detail"' class="itemLi">导航</a>
-	        <a href="http://portal.yunjiglobal.com/it_portal/index.html#/container/it" v-if='$route.path!="/detail"' class="itemLi">门户</a>
+	        <a href="" v-if='$route.path!="/detail"' class="itemLi">导航</a>
+	        <a href="" v-if='$route.path!="/detail"' class="itemLi">门户</a>
 	        <a href="javascript:;" v-if='$route.path!="/detail"' class="itemLi" @click='tips'>日程</a>
 	        <a href="javascript:;" v-if='$route.path!="/detail"' class="itemLi active">知识</a>
 	    </div>
@@ -31,11 +31,11 @@
 	        </div>
 	    </div>
       	<div class="confimLogin" v-if="Isconfirm" @mouseenter='clearTimer' @mouseleave='Isconfirm=false'>
-	        <a class="itemsLogin margin_10" href="http://sso.yunjiglobal.com/#/editpsd">
+	        <a class="itemsLogin margin_10" href="">
 	          	<img src="../../assets/img/changepsw.png" alt>
 	          	<span>修改密码</span>
 	        </a>
-	        <a class="itemsLogin" href="http://sso.yunjiglobal.com/logout">
+	        <a class="itemsLogin" href="">
 	          	<img src="../../assets/img/logout.png" alt>
 	          	<span>退出登录</span>
 	        </a>
@@ -122,7 +122,7 @@ export default {
       this.Isconfirm = false;
     },
     getAvator(){
-		axios.get('http://attendance.yunjiglobal.com/wx_auth/qw/getAvatar',{
+		axios.get('',{
 			params:{workCodes:utils.getCookie('username')}
 		})
 		.then(res=>{

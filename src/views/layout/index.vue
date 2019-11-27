@@ -2,19 +2,12 @@
 	<div id='wrap'>
     	<syk-header></syk-header>
 		<el-container class="e-index">
-			<!-- <div class="scrollbar">
-				<div class="scrollbar__view"> -->
+			
 					<syk-menu class='sykmenu' :style='{"height":oHeight+"px"}'></syk-menu>
 					<el-container :style='{"height":oHeight+"px"}'>
 						<router-view/>
-						<!-- <div class="footer">
-							"box-sizing": "border-box",
-							"padding-left": "240px",
-					        <p>Copyright © 2016 - 2019 YUNJI. All Rights Reserved. 云集 版权所有</p>
-					    </div> -->
+					
 					</el-container>
-				<!-- </div>
-			</div> -->
 		</el-container>
 	</div>
 </template>

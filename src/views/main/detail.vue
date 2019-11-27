@@ -108,7 +108,7 @@
 			</div>
 		</div>	
 		<div class="footer">
-	        <p>Copyright © 2016 - 2019 YUNJI. All Rights Reserved. 云集 版权所有</p>
+	        <p>Copyright © 2016 - 2019 SYK . All Rights Reserved.  syk版权所有</p>
 	    </div>
 	</div>
 </template>
@@ -156,7 +156,7 @@
 				})
 			},
 			downloadAnnex(index){
-				window.location.href = 'http://portal.yunjiglobal.com/informationsystem/article/getFile?attachmentUuid='+this.annexUuid+'&uuid='+this.$route.query.uuid+'&source=1&'+'workCode='+utils.getCookie('username');
+				window.location.href = ''
 			},
 			init(){
 				this.positionObj = {
@@ -274,7 +274,7 @@
 				})
 			},
 			getAvator(){
-				axios.get('http://attendance.yunjiglobal.com/wx_auth/qw/getAvatar',{
+				axios.get('',{
 					params:{workCodes:utils.getCookie('username')}
 				})
 				.then(res=>{

@@ -24,18 +24,15 @@ router.beforeEach((to, from, next) => {
 					store.commit('SET_USER');
 					next();
 				}else{
-					// window.location = 'http://ty.yunjiglobal.com/sso_pc/index.html';//测试
-					window.location = 'http://sso.yunjiglobal.com'
+					window.location = ''
 				}
 			})
 			.catch(error=>{
-				// window.location = 'http://ty.yunjiglobal.com/sso_pc/index.html';//测试
-				window.location = 'http://sso.yunjiglobal.com'
+				window.location = ''
 			})
 		};
 	}else{
-		//window.location = 'http://ty.yunjiglobal.com/sso_pc/index.html';//测试
-		window.location = 'http://sso.yunjiglobal.com'
+		window.location = ''
 	}
 });
 Vue.use(toast)
